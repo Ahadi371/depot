@@ -8,26 +8,36 @@
     <link rel="stylesheet" href="./assetc/css/depot.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-        
-        <!-- Owl Carousel Theme (optional) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- Owl Carousel Theme (optional) -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    
+
     <section>
         <div class="text-center mt-5 mb-5">
             <img src="./assetc/img/logo-img-centered.png" class="logo" alt="logo">
         </div>
     </section>
+
     <section>
         <nav class="navbar navbar-expand navbar-light m-5 text-center">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarScroll">
+                    <button class="btn" type="button">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRof0218E66tedt05nc2ALQ18okacdhTPYBGg&s"
+                            alt="">
+                    </button>
                     <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item dropdown text-center"
                             onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');"
@@ -132,10 +142,62 @@
 
                         </li>
                     </ul>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                        aria-controls="offcanvasMenu">
+                        <img src="./assetc/img/download (5).png" alt="">
+                    </button>
                 </div>
             </div>
         </nav>
-
+        <div class="offcanvas offcanvas-end bg-dark w-50" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close" style="color: white;"></button>
+            </div>
+            <div class="offcanvas-body  ">
+                <div>
+                    <h3 class="text-white text-center mt-5">WELCOME</h3>
+                    <p class="text-white p-4 text-center">Advertising is the way great brands get to be great brands.
+                    </p>
+                    <div class="w-75 mx-auto">
+                    <div class="row">
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121700270_225093348948361_5082705528782722824_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121706350_341238710274276_2107885337301681786_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121723529_3793969053955516_8810353083681158264_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121973628_200177911508014_2941590146547160742_n.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/122051697_411026813238434_1355949659294403733_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121973628_200177911508014_2941590146547160742_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/122148512_2806300579659337_8890330674367352214_n.jpg" alt=""/>
+                        </div>
+                        <div class="col-3 p-1">
+                            <img src="./assetc/img/121665687_358112645401863_3510768153228424655_n.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- <ul class="list-group bg-dark">
+                    <li class="list-group-item"><a href="#">Menu Item 1</a></li>
+                    <li class="list-group-item"><a href="#">Menu Item 2</a></li>
+                    <li class="list-group-item"><a href="#">Menu Item 3</a></li>
+                </ul> -->
+            </div>
+        </div>
     </section>
     <section style="width: 90%; margin: auto; ">
         <div class="row m-0 mb-5">
@@ -163,53 +225,66 @@
     </section>
     <Section class="m-6" style="width: 90%; margin: auto;">
         <div class="owl-carousel">
-            <div class="item"> 
+            <div class="item">
                 <img src="./assetc/img/h1-product-1-1100x730.jpg" alt="">
                 <h4 class="text-center mt-2">Table Lamp</h4><span class="price">$120</span>
             </div>
             <div class="item">
                 <img src="./assetc/img/h1-product-2-1100x730.jpg" alt="">
-                <h4 class="text-center mt-2">Flower Vase</h4><span class="price">$120</span></div>
+                <h4 class="text-center mt-2">Flower Vase</h4><span class="price">$120</span>
+            </div>
             <div class="item">
                 <img src="./assetc/img/h1-product-3-1-1100x730.jpg" alt="">
-                <h4 class="text-center mt-2">Rose Holdback</h4><span class="price">$120</span></div>
+                <h4 class="text-center mt-2">Rose Holdback</h4><span class="price">$120</span>
+            </div>
             <div class="item">
                 <img src="./assetc/img/h1-product-4-1100x730.jpg" alt="">
-                <h4 class="text-center mt-2">Deco Accessory</h4><span class="price">$120</span></div>
+                <h4 class="text-center mt-2">Deco Accessory</h4><span class="price">$120</span>
+            </div>
             <div class="item">
                 <img src="./assetc/img/h1-product-5-1100x730.jpg" alt="">
                 <h4 class="text-center mt-2">Basket With Handles</h4>
                 <span class="price">$120</span>
             </div>
-                <div class="item">
-                    <img src="./assetc/img/h1-product-8-1100x730.jpg" alt="">
-                    <h4 class="text-center mt-2">Wall Clock</h4>
-                    <span class="price">$120</span>
-                </div>
-          </div>
-          
+            <div class="item">
+                <img src="./assetc/img/h1-product-8-1100x730.jpg" alt="">
+                <h4 class="text-center mt-2">Wall Clock</h4>
+                <span class="price">$120</span>
+            </div>
         </div>
-    
+
+        </div>
+
     </Section>
-    <section class="p-5" style="background-color: #F3F3F3;">
+    <section class="p-5" style="background-color: #F3F3F3; width: 90%; margin: auto;">
         <div class="container mt-5">
             <h2 class="text-center ">WHAT THEY’RE SAYING</h2>
             <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="text-center mt-5 w-50 m-auto " style="color: #D1C8C4;">"Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis. Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci aliquenenan  penatibus dis parturienmontes ultricies."</p>
+                        <p class="text-center mt-5 w-50 m-auto " style="color: #D1C8C4;">"Cum sociis natoque penatibus
+                            magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis.
+                            Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci
+                            aliquenenan penatibus dis parturienmontes ultricies."</p>
                         <p class="text-center mt-4">Christine Parker</p>
                         <p class="text-center " style="color: #D1C8C4;">UX Designer</p>
                     </div>
                     <div class="carousel-item">
-                        <p class="text-center mt-5 w-50 m-auto" style="color: #D1C8C4;">"Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis. Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci aliquenenan  penatibus dis parturienmontes ultricies."</p>
+                        <p class="text-center mt-5 w-50 m-auto" style="color: #D1C8C4;">"Cum sociis natoque penatibus
+                            magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis.
+                            Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci
+                            aliquenenan penatibus dis parturienmontes ultricies."</p>
                         <p class="text-center mt-4">Christine Parker</p>
                         <p class="text-center " style="color: #D1C8C4;">UX Designer</p>
-                                        </div>
+                    </div>
                     <div class="carousel-item">
-                        <p class="text-center mt-5 w-50 m-auto" style="color: #D1C8C4;">"Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis. Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci aliquenenan  penatibus dis parturienmontes ultricies."</p>
+                        <p class="text-center mt-5 w-50 m-auto" style="color: #D1C8C4;">"Cum sociis natoque penatibus
+                            magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis.
+                            Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci
+                            aliquenenan penatibus dis parturienmontes ultricies."</p>
                         <p class="text-center mt-4">Christine Parker</p>
-                        <p class="text-center " style="color: #D1C8C4;">UX Designer</p>                    </div>
+                        <p class="text-center " style="color: #D1C8C4;">UX Designer</p>
+                    </div>
                 </div>
                 <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#textCarousel" data-bs-slide="prev">
@@ -277,55 +352,55 @@
     </div>
 
     <!-- Footer -->
-<hr class="hr-opacty">
-<footer class="text-dark p-5">
-    <div class="container">
-        <div class="row justify-content-center footer-row">
-            <!-- Customer Service -->
-            <div class="col-md-3">
-                <h5>Customer Service</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Help & Contact Us</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Returns & Refunds</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Online Stores</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <!-- Company -->
-            <div class="col-md-3 ">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">What We Do</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Available Services</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Latest Posts</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">FAQs</a></li>
-                </ul>
-            </div>
-            <!-- Social Media -->
-            <div class="col-md-3 ">
-                <h5>Social Media</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Twitter</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Instagram</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Tumblr</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Pinterest</a></li>
-                </ul>
-            </div>
-            <!-- Profile -->
-            <div class="col-md-3 ">
-                <h5>Profile</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">My Account</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Checkout</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Order Tracking</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none text-muted">Help & Support</a></li>
-                </ul>
+    <hr class="hr-opacty">
+    <footer class="text-dark p-5">
+        <div class="container">
+            <div class="row justify-content-center footer-row">
+                <!-- Customer Service -->
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Help & Contact Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Returns & Refunds</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Online Stores</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div class="col-md-3 ">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">What We Do</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Available Services</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Latest Posts</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">FAQs</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="col-md-3 ">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Twitter</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Instagram</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Tumblr</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Pinterest</a></li>
+                    </ul>
+                </div>
+                <!-- Profile -->
+                <div class="col-md-3 ">
+                    <h5>Profile</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">My Account</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Checkout</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Order Tracking</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none text-muted">Help & Support</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Bootstrap JS and dependencies -->
- 
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+
 
     <!-- <script>
         
@@ -343,11 +418,12 @@
       
       
            </script> -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assetc/js/depot.js"></script>
 
-
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

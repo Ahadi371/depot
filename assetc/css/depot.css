@@ -87,6 +87,13 @@ a{
 .hr-opacty{
   opacity: 0.1;
 }
+.btn img{
+  height: 16px;
+  height: 25px;
+}
+.offcanvas-body div div img{
+  width: 100% ;
+}
 
 
 
