@@ -1,0 +1,33 @@
+.logo {
+    
+    height: 26px;
+    width: 137px;
+}
+.benner{
+    width: 100%;
+    border: 0;
+}
+/* #owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+   .d-block{
+    width: 346px;
+    height: 230px;
+   }
+   .owl-carousel .item {
+    /* background: #4CAF50; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* color: rgb(255, 255, 255); */
+    font-size: 18px;
+  }
+  #text-carousel{
+    background-color: #F3F3F3;
+  }
+  
