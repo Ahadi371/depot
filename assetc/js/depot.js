@@ -31,7 +31,37 @@ $(document).ready(function(){
     function() {
         // On hover out, revert to original price
         $(this).html("$120");
-    }
+    },
+
+    $(".image-container").hover(
+      function () {
+          // On mouse enter
+          $(this).find(".image-front").css({
+              opacity: 0,
+              transform: "scale(1.0)"
+          });
+          $(this).find(".image-back").css({
+              opacity: 1,
+              transform: "scale(1)"
+          });
+      },
+      function () {
+          // On mouse leave
+          $(this).find(".image-front").css({
+              opacity: 1,
+              transform: "scale(1)"
+          });
+          $(this).find(".image-back").css({
+              opacity: 0,
+              transform: "scale(1.0)"
+          });
+      }
+  )
+    
+
+    
 );
+// script.js
+
 
   

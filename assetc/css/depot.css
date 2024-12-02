@@ -30,4 +30,49 @@
   #text-carousel{
     background-color: #F3F3F3;
   }
+  /* .client-img{
+    height: 62px;
+    width: 220px;
+  } */
+ 
+/* styles.css */
+.image-container {
+  position: relative;
+  width: 220px;  /* Fixed container width */
+  height: 62px;  /* Fixed container height */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;   /* Ensure the image fills the container's width */
+  height: 100%;  /* Ensure the image fills the container's height */
+  object-fit: contain; /* Retain aspect ratio */
+  transition: opacity 0.6s ease;  /* Smooth opacity transition */
+}
+
+/* The front image, visible by default */
+.image-front {
+  opacity: 1;  /* Front image is fully visible */
+}
+
+/* The back image is initially hidden */
+.image-back {
+  opacity: 0;  /* Initially, the back image is hidden */
+  position: absolute;  /* Stack the back image on top of the front image */
+  top: 0;
+  left: 0;
+}
+
+/* Hover effect: hide the front image and show the back image */
+.image-container:hover .image-front {
+  opacity: 0;  /* Fade out the front image */
+}
+
+.image-container:hover .image-back {
+  opacity: 1;  /* Fade in the back image */
+}
+
+
+
   
