@@ -1,3 +1,7 @@
+body{
+  font-family: Catamaran,sans-serif;
+
+}
 .logo {
     
     height: 26px;
@@ -51,6 +55,10 @@
   transition: opacity 0.6s ease;  /* Smooth opacity transition */
 }
 
+.footer-row ul li {
+  font-size: 14px;
+}
+
 /* The front image, visible by default */
 .image-front {
   opacity: 1;  /* Front image is fully visible */
@@ -71,6 +79,13 @@
 
 .image-container:hover .image-back {
   opacity: 1;  /* Fade in the back image */
+}
+a{
+  text-decoration: none;
+}
+
+.hr-opacty{
+  opacity: 0.1;
 }
 
 
